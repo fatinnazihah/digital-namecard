@@ -1,14 +1,14 @@
 BEGIN:VCARD
 VERSION:3.0
 PRODID:-//Apple Inc.//iPhone OS 11.2.2//EN
-N:Lim;Preston;;;
-FN: Preston  Lim 
-ORG:GovTech;
-TITLE:Associate Software Engineer\nProducts Team, Data Science Division
-EMAIL;type=INTERNET;type=WORK;type=pref:preston@data.gov.sg
-TEL;type=WORK;type=VOICE:+65 9123 4567
-item1.ADR;type=WORK;type=pref:;;1 Fusionopolis View\nSandcrawler\, 09-01;;;138577;Singapore
-item1.X-ABADR:sg
-item2.URL;type=pref:tech.gov.sg
+N:Siah;Phylisia;;;
+FN: Phylisia Siah 
+ORG:Cahaya Hornbill Sdn. Bhd.;
+TITLE:Sales Cum Operation Assistant\nCahaya Hornbill Sdn. Bhd.
+EMAIL;type=INTERNET;type=WORK;type=pref:phylisia@cahayahornbill.com.my
+TEL;type=WORK;type=VOICE:+60 139589744
+item1.ADR;type=WORK;type=pref:;;Commercial Centre, Lot 10591, Block 10,\nKuala Baram District, Pujut 7, Q1231 Jalan Dato Sri Joseph Balan Seling;;;98000 Miri;Sarawak;Malaysia
+item1.X-ABADR:my
+item2.URL;type=pref:cahayahornbill.com
 item2.X-ABLabel:_$!<HomePage>!$_
 END:VCARD
