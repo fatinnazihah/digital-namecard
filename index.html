@@ -1,42 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
-  <link href='https://fonts.googleapis.com/css?family=Lato:200,300,400,700' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:200,300,400,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Muli:200,300" rel="stylesheet">
-  <title>Phylisia Contact Card</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 <body>
 
-  <!-- Business Card Section -->
+  <!-- Banner / Business Card -->
   <section class="bg-color-grey banner">
     <div class="container">
       <div class="row">
         <div class="col"></div>
-
         <div class="col is-5">
-          <!-- Click to enlarge + download -->
+          <!-- Business Card instead of profile image -->
           <a href="phylisia_card.jpg" download>
-            <img class="business-card" src="phylisia_card.jpg" alt="Business Card" id="cardImage">
+            <img class="business-card" src="phylisia_card.jpg" alt="Business Card">
           </a>
-
-          <p class="tap-to-enlarge">Tap to enlarge or download</p>
+          <p class="tap-to-expand">Tap to enlarge / download</p>
         </div>
-
         <div class="col"></div>
       </div>
     </div>
   </section>
-
-  <!-- Modal for enlarged view -->
-  <div id="imageModal" class="modal">
-    <span class="modal-close">&times;</span>
-    <img class="modal-content" id="modalImage">
-  </div>
 
   <!-- Primary Info -->
   <section class="bg-color-white primary-info">
@@ -48,91 +37,102 @@
           <p class="text-title-company">Cahaya Hornbill Sdn. Bhd.</p>
         </div>
         <div class="col">
-          <img src="logo_chsb.png" alt="Company Logo" class="company-logo">
+          <img class="company-logo" src="logo_chsb.png" alt="Company Logo">
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Sections -->
-  <section class="info-section">
+  <section class="bg-color-white secondary-info">
     <a href="mailto:phylisia@cahayahornbill.com.my">
-      <div class="row info-row">
-        <img src="assets/icon-email.svg" class="icon" alt="Email">
-        <p class="text-detail">phylisia@cahayahornbill.com.my</p>
-        <img src="assets/right-arrow.svg" class="arrow">
+      <div class="container">
+        <div class="row detail">
+          <div class="col">
+            <img src="assets/icon-email.svg" alt="Email Icon">
+          </div>
+          <div class="col is-8">
+            <p class="text-detail">phylisia@cahayahornbill.com.my</p>
+          </div>
+          <div class="col">
+            <img src="assets/right-arrow.svg" alt="Right Arrow" class="arrow">
+          </div>
+        </div>
       </div>
     </a>
   </section>
 
-  <section class="info-section">
+  <section class="bg-color-white secondary-info">
     <a href="tel:+60139589744">
-      <div class="row info-row">
-        <img src="assets/icon-phone.svg" class="icon" alt="Phone">
-        <p class="text-detail">(+60)13-958 9744 / 012-850 0286</p>
-        <img src="assets/right-arrow.svg" class="arrow">
+      <div class="container">
+        <div class="row detail">
+          <div class="col">
+            <img src="assets/icon-phone.svg" alt="Phone Icon">
+          </div>
+          <div class="col is-8">
+            <p class="text-detail">(+60)13-958 9744 / 012-8500286</p>
+          </div>
+          <div class="col">
+            <img src="assets/right-arrow.svg" alt="Right Arrow" class="arrow">
+          </div>
+        </div>
       </div>
     </a>
   </section>
 
-  <section class="info-section">
+  <section class="bg-color-white secondary-info">
     <a href="https://cahayahornbill.com">
-      <div class="row info-row">
-        <img src="assets/icon-website.svg" class="icon" alt="Website">
-        <p class="text-detail">cahayahornbill.com</p>
-        <img src="assets/right-arrow.svg" class="arrow">
+      <div class="container">
+        <div class="row detail">
+          <div class="col">
+            <img src="assets/icon-website.svg" alt="Website Icon">
+          </div>
+          <div class="col is-8">
+            <p class="text-detail">cahayahornbill.com</p>
+          </div>
+          <div class="col">
+            <img src="assets/right-arrow.svg" alt="Right Arrow" class="arrow">
+          </div>
+        </div>
       </div>
     </a>
   </section>
 
-  <section class="info-section">
+  <section class="bg-color-white secondary-info">
     <a href="https://maps.app.goo.gl/5SBeVeMAGctZnxfZ7">
-      <div class="row info-row">
-        <img src="assets/icon-address.svg" class="icon" alt="Address">
-        <p class="text-detail">
-          Commercial Centre, Lot 10591, Block 10, Kuala Baram District, Pujut 7,<br>
-          Q1231 Jalan Dato Sri Joseph Balan Seling, 98000 Miri, Sarawak
-        </p>
-        <img src="assets/right-arrow.svg" class="arrow">
+      <div class="container">
+        <div class="row detail">
+          <div class="col">
+            <img src="assets/icon-address.svg" alt="Address Icon">
+          </div>
+          <div class="col is-8">
+            <p class="text-detail">
+              Commercial Centre, Lot 10591, Block 10, Kuala Baram District, Pujut 7,<br>
+              Q1231 Jalan Dato Sri Joseph Balan Seling, 98000 Miri, Sarawak
+            </p>
+          </div>
+          <div class="col">
+            <img src="assets/right-arrow.svg" alt="Right Arrow" class="arrow">
+          </div>
+        </div>
       </div>
     </a>
   </section>
 
-  <!-- Download VCF -->
+  <!-- Download Button -->
   <section class="bg-color-white bottom">
     <div class="container">
       <div class="row">
         <div class="col"></div>
         <div class="col is-5">
-          <a href="user.vcf">
-            <div class="button">Download Contact</div>
-          </a>
+          <div class="button">
+            <a class="button-text" href="user.vcf">Download Contact</a>
+          </div>
         </div>
         <div class="col"></div>
       </div>
     </div>
   </section>
-
-  <script>
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("modalImage");
-    const cardImg = document.getElementById("cardImage");
-    const closeBtn = document.getElementsByClassName("modal-close")[0];
-
-    cardImg.onclick = function (e) {
-      e.preventDefault();
-      modal.style.display = "block";
-      modalImg.src = this.src;
-    }
-
-    closeBtn.onclick = function () {
-      modal.style.display = "none";
-    }
-
-    window.onclick = function (e) {
-      if (e.target == modal) modal.style.display = "none";
-    }
-  </script>
 
 </body>
 
