@@ -2,34 +2,27 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+  background-color: #ffffff;
   font-family: 'Lato', sans-serif;
 }
 
-/* Remove fixed heights (they break layout) */
+/* Sections */
 section {
-  padding: 1rem 0.5rem;
+  padding: 1.2rem 0.5rem;
 }
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
+.bg-color-grey {
+  background-color: #F2F2F2;
 }
 
-img.profile-pic {
-  width: 160px;        /* fixed responsive size */
-  height: 160px;
-  object-fit: cover;
-  border-radius: 50%;
+.bg-color-white {
+  background-color: #ffffff;
 }
 
-/* Grid system */
+/* Container */
 .container {
   width: 100%;
-  max-width: 900px;
+  max-width: 850px;
   margin: 0 auto;
 }
 
@@ -37,61 +30,116 @@ img.profile-pic {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: nowrap;
 }
 
 .col {
   flex: 1;
   padding: 0.5rem;
-  overflow: visible;  /* FIX: prevents misalignment */
 }
 
-/* Column widths */
 .col.is-5 { flex: 0 0 50%; }
 .col.is-6 { flex: 0 0 60%; }
-.col.is-8 { flex: 0 0 80%; }
 
-.bg-color-grey {
-  background-color: #F2F2F2;
+/* Business Card */
+.business-card {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
 }
 
-.text-name {
-  font-weight: 400;
-  font-size: 22px;
-  color: #333;
-}
-
-.text-title-company,
-.text-detail {
-  font-weight: 300;
-  font-size: 14px;
+.tap-to-enlarge {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 8px;
   color: #555;
 }
 
-/* Button fix */
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 30;
+  padding-top: 60px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+/* Text Styling */
+.text-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+}
+
+.text-title-company {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* Contact Sections */
+.info-section {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  width: 26px;
+  height: 26px;
+}
+
+.arrow {
+  margin-left: auto;
+  width: 16px;
+}
+
+.text-detail {
+  font-size: 14px;
+  color: #444;
+  flex: 1;
+}
+
+/* Button */
 .button {
   background-color: #219653;
-  height: 48px;
-  padding-left: 24px;
-  padding-right: 24px;
-  text-align: center;
-  line-height: 48px;
   color: white;
-  font-family: 'Muli', sans-serif;
+  text-align: center;
+  padding: 12px;
   border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Muli', sans-serif;
 }
 
 /* Responsive */
 @media screen and (max-width: 600px) {
-  img.profile-pic {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  img.profile-pic {
-    width: 100px;
-    height: 100px;
+  .business-card {
+    border-radius: 6px;
   }
 }
