@@ -2,27 +2,44 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background-color: #ffffff;
   font-family: 'Lato', sans-serif;
 }
 
-/* Sections */
 section {
-  padding: 1.2rem 0.5rem;
+  padding: 1rem 0.5rem;
 }
 
-.bg-color-grey {
-  background-color: #F2F2F2;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
-.bg-color-white {
-  background-color: #ffffff;
+.business-card {
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-/* Container */
+.tap-to-expand {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+  margin-top: 6px;
+}
+
+.company-logo {
+  width: 120px;     /* FIX: smaller */
+  height: auto;
+  object-fit: contain;
+}
+
 .container {
   width: 100%;
-  max-width: 850px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -39,107 +56,51 @@ section {
 
 .col.is-5 { flex: 0 0 50%; }
 .col.is-6 { flex: 0 0 60%; }
+.col.is-8 { flex: 0 0 80%; }
 
-/* Business Card */
-.business-card {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0px 2px 12px rgba(0,0,0,0.15);
-  cursor: pointer;
-}
-
-.tap-to-enlarge {
-  text-align: center;
-  font-size: 12px;
-  margin-top: 8px;
-  color: #555;
-}
-
-/* Modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 30;
-  padding-top: 60px;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.8);
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 90%;
-  max-width: 600px;
-  border-radius: 10px;
-}
-
-.modal-close {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-}
-
-/* Text Styling */
 .text-name {
-  font-size: 24px;
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 22px;
   color: #333;
 }
 
-.text-title-company {
-  font-size: 14px;
-  color: #666;
-  margin-top: 4px;
-}
-
-/* Contact Sections */
-.info-section {
-  padding: 0.7rem 1rem;
-  border-bottom: 1px solid #eee;
-}
-
-.info-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.icon {
-  width: 26px;
-  height: 26px;
-}
-
-.arrow {
-  margin-left: auto;
-  width: 16px;
-}
-
+.text-title-company,
 .text-detail {
+  font-weight: 300;
   font-size: 14px;
-  color: #444;
-  flex: 1;
+  color: #555;
 }
 
-/* Button */
-.button {
-  background-color: #219653;
+.bg-color-grey {
+  background-color: #F2F2F2;
+}
+
+/* FIX: remove underline */
+.button-text {
   color: white;
-  text-align: center;
-  padding: 12px;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
+  text-decoration: none;
   font-family: 'Muli', sans-serif;
 }
 
-/* Responsive */
+.button {
+  background-color: #219653;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.arrow {
+  width: 40%;
+  height: 50%;
+}
+
 @media screen and (max-width: 600px) {
   .business-card {
-    border-radius: 6px;
+    width: 220px;
+  }
+  .company-logo {
+    width: 90px;
   }
 }
